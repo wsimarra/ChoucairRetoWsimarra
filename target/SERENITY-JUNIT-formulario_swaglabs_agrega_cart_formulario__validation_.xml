@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Formulario SWAGLABS" skipped="0" tests="1" time="6.52" timestamp="2022-03-24 11:49:37"><testcase name="agrega CART formulario  Validation,"><failure message="&#10;Expected: a string containing &quot;Products&quot;&#10;     but: was &quot;PRODUCTS&#10;NAME (A TO Z)&#10;Name (A to Z)&#10;Name (Z to A)&#10;Price (low to high)&#10;Price (high to low)&quot;" type="java.lang.AssertionError">
+Expected: a string containing "Products"
+     but: was "PRODUCTS
+NAME (A TO Z)
+Name (A to Z)
+Name (Z to A)
+Price (low to high)
+Price (high to low)"</failure><system-err>
+Expected: a string containing "Products"
+     but: was "PRODUCTS
+NAME (A TO Z)
+Name (A to Z)
+Name (Z to A)
+Price (low to high)
+Price (high to low)"&#13;
+pages.LoginSwaglabsPage.VerificaHome(LoginSwaglabsPage.java:40)&#13;
+steps.SwagValidationStep.login_Swag(SwagValidationStep.java:19)&#13;
+definitions.SwagValidacionDefinicion.autentico_en_SWAGLABS_usuario(SwagValidacionDefinicion.java:19)&#13;
+✽.Autentico en SWAGLABS con usuario "standard_user" y clave "secret_sauce"(src/test/resources/features/Realizarcompra.feature:12)&#13;
+</system-err></testcase></testsuite>
