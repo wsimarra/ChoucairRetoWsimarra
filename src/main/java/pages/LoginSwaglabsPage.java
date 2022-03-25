@@ -25,17 +25,16 @@ public class LoginSwaglabsPage extends PageObject{
     public    WebElement btnSubmit;
 
     // label del home verificar
-    @FindBy(xpath = "//*[@id='header_container']/div[2]")
+    @FindBy(xpath = "//*[@id='header_container']/div[2]/span")
     public WebElementFacade iblHomePpal;
-
-    public  void ingresarDatos(String strUsuario, String strPass) {
+        public  void ingresarDatos(String strUsuario, String strPass) {
         txtUserName.sendKeys(strUsuario);
         txtPassword.sendKeys(strPass);
         btnSubmit.click();
     }
 
     public void VerificaHome() {
-        String labelv = "Products";
+        String labelv = "PRODUCTS";
         String strMensaje = iblHomePpal.getText();
         assertThat(strMensaje, containsString(labelv));
     }
